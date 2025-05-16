@@ -1,7 +1,5 @@
 // Mock user database
-const users = [
-  { id: 1, email: 'test@example.com', password: 'hashedPassword123', name: 'Test User' }
-];
+const users = [];
 
 // Mock database functions
 const dbFunctions = {
