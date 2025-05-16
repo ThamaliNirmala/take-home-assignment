@@ -1,66 +1,95 @@
-# Interview Assignmen
-## Frontend Task
+# Full Stack Application
 
-### Requirements
-- Recreate the UI shown in the provided image
-- Start with the base template provided tailwind is setup
+This is a full stack web application with a React-based frontend and a Node.js backend. This guide provides instructions to set up, run, and test both the frontend and backend as a developer.
 
-### Evaluation Criteria
-- Code organization and structure
-- Component reusability
-- State management implementation
-- UI/UX accuracy
-- Responsive design implementation
-- Code documentation
+---
 
-## Backend Task
+## 📁 Project Structure
 
-### Requirements
-1. **Authentication System**
-   - Create a login route that returns a JWT authentication token
-   - Implement proper password hashing
-   - Include input validation
-   - Return appropriate error messages
+```
+root/
+│
+├── frontend/         # React application
+│   └── ...           
+│
+├── backend/          # Node.js backend (with Jest for testing)
+│   └── ...
+│
+└── README.md         # Developer guide
+```
 
-2. **JWT Middleware**
-   - Create a middleware function to verify JWT authentication tokens
-   - Handle token expiration
-   - Implement proper error handling
-   - Secure routes using the middleware
+---
 
-3. **Protected Account Route**
-   - Create an account route that can only be accessed using a valid JWT token
-   - Implement proper error handling
-   - Return appropriate user data
+## 🚀 Getting Started
 
-### Setup Instructions
-1. Use the backend template provided
-2. Install necessary dependencies
-3. Placeholder routes and middleware exists feel free to edit or create more
-4. add comments to explain your code
+To run this application locally, follow the instructions below.
 
-### Evaluation Criteria
-- Code organization and structure
-- Security implementation
-- Error handling
-- Code reusability
-- Testing implementation
+### Prerequisites
 
-## Submission Guidelines
+Ensure you have the following installed:
 
-1. clone this repository
-3. Implement the required features
-4. Add a detailed README.md explaining your implementation
-5. create public git repo and submit the url 
+- **Node.js** (v16 or later recommended)
+- **npm** or **yarn**
 
-## Additional Notes
+---
 
-- Use proper error handling throughout the application
-- Implement input validation
-- Follow security best practices
-- Add comments to explain complex logic
-- Include setup instructions in your README
+## ⚛️ Frontend (React)
 
-## Questions?
+### Setup
 
-If you have any questions about the assignment, please contact gauth672@gmail.com 
+```
+cd frontend
+npm install
+```
+
+### Running the App
+
+```
+npm run dev
+```
+
+The app will start in development mode and typically run on `http://localhost:3000`.
+
+### Build for Production
+
+```
+npm run build
+```
+
+## 🛠 Backend (Node.js)
+
+### Setup
+
+```
+cd backend
+npm install
+```
+
+### Running the Server
+
+```
+npm start
+```
+
+This starts the backend server, typically at `http://localhost:5000` or your configured port.
+
+### Testing with Jest
+
+```
+npm test
+```
+
+This runs all Jest unit tests.
+
+## 🧪 Testing
+
+### Backend (Jest)
+
+- Tests are located in the `backend/src/tests` directory.
+- Follows standard Jest testing patterns.
+
+> Ensure all new features are covered with adequate tests.
+
+---
+
+
